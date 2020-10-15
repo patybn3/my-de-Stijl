@@ -1,6 +1,7 @@
-Assigment 5-5
-Student ID: 00318934
-Name: Patricia Antlitz
+# Assigment 5-5
+
+## Name: Patricia Antlitz
+
 Professor Ethel Schuster
 Introduction to Computer Science CIS-140
 13 October 2020
