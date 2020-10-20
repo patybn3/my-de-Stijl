@@ -1,12 +1,11 @@
-/* Assigment 5-5
-Student ID: 00318934
+/* Assignment 5-5
 Name: Patricia Antlitz
 Professor Ethel Schuster
 Introduction to Computer Science CIS-140
-13 October 2020 
+13 October 2020
 
-5. my-de-Stjil: Inspired by De Stijl artists such as Theo van Doesburg 
-create your own de-Stijl design. Include your signature! 
+5. my-de-Stjil: Inspired by De Stijl artists such as Theo van Doesburg
+create your own de-Stijl design. Include your signature!
 
 The work I am submitting is my own in its entirety
 */
@@ -34,10 +33,10 @@ void setup(){
 
 // Create function draw to run commands
 void draw() {
-  
+
   // set up the screen background color to lightGray
   background(lightGray);
-    
+
     // Local variables for coordinations
     int tall = height;
     int wide = width;
@@ -47,16 +46,16 @@ void draw() {
     int yLoc = tall/10;
     int wide3 = 3*width/4;
     int tall3 = 3*height/4;
-    
+
     // drawVertical creates a pattern of lines on the screen from the x axis
     drawVertical(black, orig, tall, 120);
     drawVertical(black, orig, tall, 170);
     drawVertical(black, orig, halfH - 40, 200);
-    
+
     // drawHorizontal creates a pattern of lines from the y axis
     drawHorizontal(black, halfW+60, orig, 245);
     drawHorizontal(black, wide, orig, 205);
-    
+
     // drawRect creates the colored rectangles on the screen
     drawRect(red, xLoc, yLoc, 120, 205);
     drawRect(red, wide3, tall3+20, 110, 127);
@@ -68,7 +67,7 @@ void draw() {
     drawRect(black, orig,  tall3+90, 70, 60);
     drawRect(black, halfW -5,  halfH - 30, 60, 30);
     drawRect(black, halfW +70, orig, 90, 30);
-    
+
     // signature
     // select the color black
     fill(black);
@@ -76,18 +75,18 @@ void draw() {
     textFont(font1, 13);
     // add text and coordinates
     text("Patricia Antlitz", 383, 580);
-    
+
 }
 
 
 /* drawVertical function calls for param "c" of type integer to be used
-to determinate the color of the line, float y1 calls for the position of 
+to determinate the color of the line, float y1 calls for the position of
 the first point of line on the y axis and float y2 calls for the position
 of the second point of the line in the y axis. xSpace determinates the
 amount of space between the lines*/
 
 void drawVertical(int c, float y1, float y2, int xSpace){
-  
+
 // create local variable for the screen's width.
 int wide = width;
 // set local variable for the width of where the lines should start
@@ -96,7 +95,7 @@ int xloc = wide/7;
   /* for loop will iterate the commands. Set a variable of type integer
   as x1 which is equal to variable xloc, as long a variable x1 is less or
   equal to the width of the page, add xSpace value to x1 and draw a line using
-  param "c" as the color for the stroke, add the for loop as point x1 and x2 
+  param "c" as the color for the stroke, add the for loop as point x1 and x2
   of the line. */
   for(int x1 = xloc; x1 <= wide; x1 += xSpace) {
         // assign stoke color for the lines
@@ -110,7 +109,7 @@ int xloc = wide/7;
 
 
 /* drawHorizontal function calls for param "c" of type integer to be used
-to determinate the color of the line, float x1 calls for the position of 
+to determinate the color of the line, float x1 calls for the position of
 the first point of line in the x axis and float x2 calls for the position
 of the second point of the line in the x axis. ySpace determinates the
 amount of space between the lines*/
@@ -124,11 +123,11 @@ int yloc = tall/10;
 
 // add a thickness of 10
 strokeWeight(10);
-  
+
     /* for loop will iterate the commands. Set a variable of type integer
   as y1 which is equal to variable yloc, as long a variable y1 is less or
   equal to the height of the page, add the amount set for ySpace
-  to y1 and draw a line using param "c" as the colo. Add the for loop as 
+  to y1 and draw a line using param "c" as the colo. Add the for loop as
   point y1 and y2 of the line. */
   for(int y1 = yloc; y1 <= tall; y1 += ySpace) {
         // assign stoke color for the lines
